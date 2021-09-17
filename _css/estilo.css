@@ -118,3 +118,19 @@ figure.foto-legenda figcaption{
 figure.foto-legenda:hover figcaption {
     opacity: 1;
 }
+
+section#corpo{
+    display: block;
+    width: 500px;
+    /* Para voar é preciso que esteja em block */
+    float: left;
+}
+aside#lateral{
+    display: block;
+    width: 350px;
+    float: right;
+}
+footer#rodape{
+    /* clear: both; vai limpar os block left e right */
+clear: both;
+}
