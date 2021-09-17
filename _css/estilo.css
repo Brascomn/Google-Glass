@@ -19,11 +19,24 @@ nav#menu li{
     background-color: #dddddd;
     padding: 10px;
     margin: 4px;
+    /* Esta parte pode conter no :hover Update */
+    transition: background-color 1s;
+}
+nav#menu li:hover{
+    background-color: #606060;
+    
 }
 nav h1{
     display: none;
 }
-
+nav#menu a {
+    text-decoration: none;
+    color: black;
+}
+nav#menu a:hover{
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
 /* CORPO */
 p{
     text-align: justify;
