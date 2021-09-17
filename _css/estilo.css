@@ -7,10 +7,14 @@ body{
     background-color: #dddddd;
     color: rgba(0,0,0,1);
 }
+p{
+    text-align: justify;
+    text-indent: 50px;
+}
 div#interface{
     width: 900px;
     background-color: white;
-    margin: 10px auto 0px auto ;
+    margin: -20px auto 0px auto;
     /* margin auto faz o redirecionamento automatico */
     box-shadow: 0px 0px 10px rgba(0,0,0,.5); 
     /* Essa sobra será feita um update */
@@ -21,7 +25,6 @@ div#interface{
     #cabecalho{
     background-color: #5D7CA6;
     color: white;
-    font: 800;
 
     width: 100%;
     display: flex;
@@ -75,6 +78,78 @@ div#interface{
         text-align: justify;
         text-indent: 50px;
     }
+
+nav#menu{
+    display: block;
+}
+nav#menu ul {
+    list-style:none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 400px;
+}
+nav#menu li{
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 4px;
+    /* Esta parte pode conter no :hover Update */
+    transition: background-color 1s;
+}
+nav#menu li:hover{
+    background-color: #606060;
+    
+}
+nav h1{
+    display: none;
+}
+nav#menu a {
+    text-decoration: none;
+    color: black;
+}
+nav#menu a:hover{
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+/* Uma das ideias é diminuir os icone em 80-100 de largura */
+header#cabecalho img#icone{
+    position: absolute;
+    left: 930px;
+    /* top é a recomendacão de 70 mas coloquei 50 */
+    top: 50px;
+    /* filter: drop-shadow(.5px .5px 2px grey)2px 4px 6px black);  sera um update
+    o codigo acima coloca sobra na imagemm
+    */
+    /* O reducionamento também tem que ser feito */
+}
+header#cabecalho{
+    /* linha no cabecalho */
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background: url("/_imagens/glass-logo-peq.jpg") no-repeat 0px 100px;
+    /* 80px do curso mas estou a usar 100px */
+    /* 0px - deslocamento vertical 
+    100px - deslocamento hoizontal */
+
+}
+header#cabecalho h1{
+    font-family: Arial, sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+    padding: 0px;
+    /* margin-bottom: 0px; */
+}
+header#cabecalho h2{
+    font-family: Arial, sans-serif;
+    font-size: 15pt;
+    color: #888888;
+    padding: 0px;
+    /* margin-top: 0px; */
+}
+/* CORPO */
+>>>>>>> ccbb84a3eee704e4d04ecf0c0c97f6d6ef042445
 figure.foto-legenda{
     position: relative;
     border: 8px solid rgb(255, 255, 255);
