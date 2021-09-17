@@ -1,6 +1,16 @@
 body{
-    background-color: white;
+    background-color: #dddddd;
     color: rgba(0,0,0,1);
+}
+div#interface{
+    width: 900px;
+    background-color: white;
+    margin: 10px auto 0px auto ;
+    /* margin auto faz o redirecionamento automatico */
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5); 
+    /* Essa sobra será feita um update */
+    /* margin parte externa do objecto e padding a parte interna do objecto */
+    padding: 10px;
 }
 /* CABEÇALHO */
 nav#menu{
@@ -11,8 +21,7 @@ nav#menu ul {
     text-transform: uppercase;
     position: absolute;
     top: -20px;
-    left: 700px;
-
+    left: 400px;
 }
 nav#menu li{
     display: inline-block;
@@ -36,6 +45,11 @@ nav#menu a {
 nav#menu a:hover{
     color: rgb(255, 255, 255);
     text-decoration: underline;
+}
+header#cabecalho img#icone{
+    position: absolute;
+    left: 750px;
+    top: 40px;
 }
 /* CORPO */
 p{
