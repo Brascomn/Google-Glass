@@ -125,7 +125,7 @@ section#corpo{
     /* Para voar é preciso que esteja em block */
     float: left;
     border-right: 1px  solid #606060;
-    padding-right: 10px;
+    padding-right: 15px;
 }
 aside#lateral{
     display: block;
@@ -136,4 +136,8 @@ footer#rodape{
     /* clear: both; vai limpar os block left e right */
 clear: both;
 border-top: 1px solid #606060;
+text-align: center;
+}
+footer#rodape p{
+    text-align: center;
 }
