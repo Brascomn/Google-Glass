@@ -121,9 +121,11 @@ figure.foto-legenda:hover figcaption {
 
 section#corpo{
     display: block;
-    width: 500px;
+    width: 520px;
     /* Para voar é preciso que esteja em block */
     float: left;
+    border-right: 1px  solid #606060;
+    padding-right: 10px;
 }
 aside#lateral{
     display: block;
@@ -133,4 +135,5 @@ aside#lateral{
 footer#rodape{
     /* clear: both; vai limpar os block left e right */
 clear: both;
+border-top: 1px solid #606060;
 }
