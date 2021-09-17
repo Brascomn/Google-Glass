@@ -1,3 +1,8 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'computer-font';
+    src: url(.._fonts/computer-font.ttf) format(ttf);
+}
 body{
     background-color: #dddddd;
     color: rgba(0,0,0,1);
@@ -9,7 +14,7 @@ p{
 div#interface{
     width: 900px;
     background-color: white;
-    margin: -20px auto 0px auto ;
+    margin: -20px auto 0px auto;
     /* margin auto faz o redirecionamento automatico */
     box-shadow: 0px 0px 10px rgba(0,0,0,.5); 
     /* Essa sobra será feita um update */
@@ -17,6 +22,63 @@ div#interface{
     padding: 10px;
 }
 /* CABEÇALHO */
+    #cabecalho{
+    background-color: #5D7CA6;
+    color: white;
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    }
+    #cabecalho .container-max-width{
+        max-width: 1200px;
+        width: 90%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #cabecalho a{
+        text-decoration: none;
+        color: inherit;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        padding: 10px;
+    }
+    .logo #icone{
+        margin-left: 10px;
+        max-width: 100px;
+        max-height: 100px;
+    }
+    #menu{
+        display: flex;
+        
+    }
+    #menu ul{
+        display: flex;
+    }
+    #menu li{
+        list-style: none;
+    }
+    #menu a{
+        display: block;
+        padding: 10px;
+        border-radius: 10px;
+        opacity: 0.7;
+    }
+    #menu a:hover{
+        background-color: #023059;
+        opacity: 1;
+        transition: 0.7s;
+    }
+    /* CORPO */
+    p{
+        text-align: justify;
+        text-indent: 50px;
+    }
+
 nav#menu{
     display: block;
 }
@@ -87,6 +149,7 @@ header#cabecalho h2{
     /* margin-top: 0px; */
 }
 /* CORPO */
+>>>>>>> ccbb84a3eee704e4d04ecf0c0c97f6d6ef042445
 figure.foto-legenda{
     position: relative;
     border: 8px solid rgb(255, 255, 255);
